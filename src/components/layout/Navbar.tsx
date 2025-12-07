@@ -80,7 +80,7 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent
             side="right"
-            className="w-full sm:w-80 bg-black/95 backdrop-blur-xl border-l border-white/10 p-6"
+            className="w-full sm:w-80 bg-black/40 backdrop-blur-xl border-l border-white/10 p-6"
           >
             <div className="flex flex-col gap-6 mt-16">
               {navLinks.map((link, index) => (
