@@ -54,7 +54,6 @@ const itemVariants = {
 export function Features() {
   return (
     <SectionWrapper id="usecases" className="relative">
-      {/* Section Header */}
       <div className="text-center mb-16">
         <motion.span
           initial={{ opacity: 0, y: 10 }}
@@ -84,7 +83,6 @@ export function Features() {
         </motion.p>
       </div>
 
-      {/* Features Grid */}
       <motion.div
         variants={containerVariants}
         initial="hidden"

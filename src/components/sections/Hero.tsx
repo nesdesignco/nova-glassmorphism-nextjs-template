@@ -10,9 +10,7 @@ export function Hero() {
       id="home"
       className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20 -mt-16"
     >
-      {/* Content */}
       <div className="text-center max-w-4xl mx-auto">
-        {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -22,7 +20,6 @@ export function Hero() {
           <span className="text-sm text-white/90">We just raised 1M 🚀</span>
         </motion.div>
 
-        {/* Main Title */}
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -32,7 +29,6 @@ export function Hero() {
           Shine brighter.
         </motion.h1>
 
-        {/* Subtitle */}
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -44,7 +40,6 @@ export function Hero() {
           Where ideas become reality.
         </motion.p>
 
-        {/* CTA Buttons */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -68,7 +63,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Scroll Indicator */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

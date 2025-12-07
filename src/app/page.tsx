@@ -10,24 +10,15 @@ import { CTA } from "@/components/sections/CTA";
 export default function Home() {
   return (
     <>
-      {/* Video Background */}
       <VideoBackground />
-
-      {/* Navbar */}
       <Navbar />
-
-      {/* Main Content */}
       <main>
         <Hero />
         <Features />
         <Pricing />
         <CTA />
       </main>
-
-      {/* Footer */}
       <Footer />
-
-      {/* Scroll to Top Button */}
       <ScrollToTop />
     </>
   );

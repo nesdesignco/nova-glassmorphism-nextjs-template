@@ -78,7 +78,6 @@ const itemVariants = {
 export function Pricing() {
   return (
     <SectionWrapper id="pricing" className="relative">
-      {/* Section Header */}
       <div className="text-center mb-16">
         <motion.span
           initial={{ opacity: 0, y: 10 }}
@@ -108,7 +107,6 @@ export function Pricing() {
         </motion.p>
       </div>
 
-      {/* Pricing Cards */}
       <motion.div
         variants={containerVariants}
         initial="hidden"
@@ -126,7 +124,6 @@ export function Pricing() {
               )}
               hover={!plan.popular}
             >
-              {/* Popular Badge */}
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">
                   <span className="px-4 py-1 text-xs font-medium bg-white text-black rounded-full">
@@ -135,7 +132,6 @@ export function Pricing() {
                 </div>
               )}
 
-              {/* Plan Header */}
               <div className="mb-6">
                 <h3 className="text-xl font-semibold text-white mb-2">
                   {plan.name}
@@ -143,7 +139,6 @@ export function Pricing() {
                 <p className="text-sm text-white/50">{plan.description}</p>
               </div>
 
-              {/* Price */}
               <div className="mb-6">
                 <span className="text-4xl font-bold text-white">
                   {plan.price}
@@ -151,7 +146,6 @@ export function Pricing() {
                 <span className="text-white/50 ml-2">/ {plan.period}</span>
               </div>
 
-              {/* Features */}
               <ul className="space-y-3 mb-8 flex-grow">
                 {plan.features.map((feature) => (
                   <li key={feature} className="flex items-center gap-3">
@@ -163,7 +157,6 @@ export function Pricing() {
                 ))}
               </ul>
 
-              {/* CTA Button */}
               <Button
                 className={cn(
                   "w-full rounded-full py-6",

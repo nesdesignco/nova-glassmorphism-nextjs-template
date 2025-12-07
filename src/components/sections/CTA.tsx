@@ -8,10 +8,6 @@ export function CTA() {
   return (
     <section id="careers" className="relative py-32 px-4 md:px-8">
       <div className="max-w-4xl mx-auto text-center">
-        {/* Background Glow */}
-        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <div className="w-[600px] h-[600px] bg-purple-500/20 rounded-full blur-[120px]" />
-        </div>
 
         <motion.div
           initial={{ opacity: 0, y: 30 }}

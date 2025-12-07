@@ -46,13 +46,11 @@ export function Navbar() {
       )}
     >
       <nav className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
-        {/* Logo */}
         <Link href="#home" className="flex items-center gap-2">
           <Diamond className="w-6 h-6 text-white" />
           <span className="text-xl font-semibold text-white">Nova</span>
         </Link>
 
-        {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
@@ -65,7 +63,6 @@ export function Navbar() {
           ))}
         </div>
 
-        {/* Login Button (Desktop) */}
         <div className="hidden md:block">
           <Button
             variant="secondary"
@@ -75,7 +72,6 @@ export function Navbar() {
           </Button>
         </div>
 
-        {/* Mobile Menu */}
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger asChild className="md:hidden">
             <Button variant="ghost" size="icon" className="text-white">
@@ -84,9 +80,9 @@ export function Navbar() {
           </SheetTrigger>
           <SheetContent
             side="right"
-            className="w-full sm:w-80 bg-black/90 backdrop-blur-xl border-l border-white/10"
+            className="w-full sm:w-80 bg-black/95 backdrop-blur-xl border-l border-white/10 p-6"
           >
-            <div className="flex flex-col gap-8 mt-12">
+            <div className="flex flex-col gap-6 mt-16">
               {navLinks.map((link, index) => (
                 <motion.div
                   key={link.href}

@@ -17,7 +17,6 @@ export function VideoBackground({
 }: VideoBackgroundProps) {
   return (
     <div className={cn("fixed inset-0 -z-10", className)}>
-      {/* Video */}
       <video
         autoPlay
         muted
@@ -27,14 +26,8 @@ export function VideoBackground({
       >
         <source src={src} type="video/mp4" />
       </video>
-
-      {/* Overlay */}
-      {overlay && (
-        <div className="absolute inset-0 bg-black/30" />
-      )}
-
-      {/* Fallback gradient for when video doesn't load */}
-      <div className="absolute inset-0 -z-10 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900" />
+      {overlay && <div className="absolute inset-0 bg-black/30" />}
+      <div className="absolute inset-0 -z-10 bg-black" />
     </div>
   );
 }
